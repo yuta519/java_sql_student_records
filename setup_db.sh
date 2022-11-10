@@ -35,12 +35,12 @@ mysql -h${HOSTNAME} -P${PORT} -u${USERNAME} -p${PASSWORD} ${DBNAME} -e "${insert
 selectStatement="select * from ${TABLENAME}"
 mysql -h${HOSTNAME} -P${PORT} -u${USERNAME} -p${PASSWORD} ${DBNAME} -e "${selectStatement}"
 
-# #データを更新
+# Update data
 # update_sql="update ${TABLENAME} set id=3"
 # mysql -h${HOSTNAME} -P${PORT} -u${USERNAME} -p${PASSWORD} ${DBNAME} -e "${update_sql}"
 # mysql -h${HOSTNAME} -P${PORT} -u${USERNAME} -p${PASSWORD} ${DBNAME} -e "${selectSQL}"
 
-# #データの削除
+# # Delete data
 # deleteSQL="delete from ${TABLENAME}"
 # mysql -h${HOSTNAME} -P${PORT} -u${USERNAME} -p${PASSWORD} ${DBNAME} -e "${deleteSQL}"
 # mysql -h${HOSTNAME} -P${PORT} -u${USERNAME} -p${PASSWORD} ${DBNAME} -e "${selectSQL}"
